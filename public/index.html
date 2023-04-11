@@ -9,32 +9,32 @@
 </head>
 <body class="m-0 p-0">
     <div> <!--content wrapper-->
-        <header class="bg-slate-600 text-4xl text-white flex items-center justify-center">
+        <header class="bg-green-800 text-4xl text-white flex items-center justify-center">
             <ul class="grid grid-cols-3 place-content-center w-fit">
                 <li class="w-40">
-                    <button class="bg-slate-600 hover:bg-slate-800 transition-colors text-center w-40" onclick="slide(0)">Home</button>
+                    <button class="bg-green-800 hover:bg-green-900 transition-colors text-center w-40" onclick="slide(0)">Home</button>
                 </li>
                 <li class="w-40">
-                    <button class="bg-slate-600 hover:bg-slate-800 transition-colors text-center w-40" onclick="slide(1)">Work</button>
+                    <button class="bg-green-800 hover:bg-green-900 transition-colors text-center w-40" onclick="slide(1)">Work</button>
                 </li>
                 <li class="w-40">
-                    <button class="bg-slate-600 hover:bg-slate-800 transition-colors text-center w-40" onclick="slide(2)">Contact</button>
+                    <button class="bg-green-800 hover:bg-green-900 transition-colors text-center w-40" onclick="slide(2)">Contact</button>
                 </li>
             </ul>
         </header>
         <div class="w-[100%] h-[100vh] overflow-hidden"> <!--container-->
-            <div class="flex w-[400%] box-border"> <!--pages-->
-                <div class="w-[100%] h-[100vh] flex justify-center items-center transition-[all 1s] page"> <!--page 0-->
+            <div class="flex w-[300%] box-border"> <!--pages-->
+                <div class="w-[100%] h-screen flex justify-center items-center transition-[all] duration-500 page"> <!--page 0-->
                     <h1>
                         Home
                     </h1>
                 </div>
-                <div class="w-[100%] h-[100vh] flex justify-center items-center transition-[all 1s] page"> <!--page 1-->
+                <div class="w-[100%] h-screen flex justify-center items-center transition-[all] duration-500 page"> <!--page 1-->
                     <h1>
                         Work
                     </h1>
                 </div>
-                <div class="w-[100%] h-[100vh] flex justify-center items-center transition-[all 1s] page"> <!--page 2-->
+                <div class="w-[100%] h-screen flex justify-center items-center transition-[all] duration-500 page"> <!--page 2-->
                     <h1>
                         Contact
                     </h1>
@@ -42,5 +42,7 @@
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

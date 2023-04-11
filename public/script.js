@@ -1,7 +1,7 @@
-const pages = document.querySelectorAll(pages);
-const currentPageNumber = 0;
+const pages = document.querySelectorAll('.page');
 
-slide = (requestedPage) => {
-    currentPageNumber = requestedPage;
-    pages.style.transform
+function slide(requestedPage) {  
+    pages.forEach( page => {
+        page.style.transform = `translateX(${-(requestedPage * 100)}%)`
+    });
 }
