@@ -5,3 +5,11 @@
 body {
     font-family: 'Merriweather', serif;
 }
+
+.accordion .answer {
+    max-height: 0px;
+}
+
+.accordion.active .answer {
+    max-height: 1000px;
+}
