@@ -8,90 +8,95 @@
     <link rel="stylesheet" href="output.css" />
 </head>
 <body class="m-0 p-0">
-    <div> <!--content wrapper-->
-        <header class="bg-green-800 text-4xl text-white flex items-center justify-center">
-            <ul class="grid grid-cols-4 place-content-center w-fit">
-                <li class="w-44">
-                    <button class="bg-green-800 hover:bg-green-900 transition-colors text-center w-44" onclick="slide(0)">Home</button>
-                </li>
-                <li class="w-44">
-                    <button class="bg-green-800 hover:bg-green-900 transition-colors text-center w-44" onclick="slide(1)">Work</button>
-                </li>
-                <li class="w-44">
-                    <button class="bg-green-800 hover:bg-green-900 transition-colors text-center w-44" onclick="slide(2)">Interests</button>
-                </li>
-                <li class="w-44">
-                    <button class="bg-green-800 hover:bg-green-900 transition-colors text-center w-44" onclick="slide(3)">Contact</button>
-                </li>
-            </ul>
-        </header>
-        <div class="w-[100%] h-[100vh] overflow-hidden"> <!--container-->
-            <div class="flex w-[400%] box-border"> <!--pages-->
-                <div class="w-[100%] h-screen flex justify-center transition-[all] duration-500 page"> <!--page 0-->
-                    <div class="w-[30%] bg-green-50 outline outline-[20px] outline-green-50 rounded-lg">
-                        <div>
-                            <hr class="bg-green-800 h-[3px] my-5">
-                            <p class="text-5xl text-left">
-                                Home
-                            </p>
-                            <div>
-                                <p class="text-left">
-                                    Hi, I'm Emmett Tackaberry.
-                                    
-                                    <br>
-                                    
-                                    Iasdfsdf
-                                </p>
-                                <div class="flex justify-center my-5">
-                                    <img class="w-[100%] rounded-md" src="img/helicopter.png" alt="An image with a helicopter I made in Photoshop" />
+    <div class="w-[200%] h-[100%] flex"> <!--content wrapper-->
+        <div class="h-[100%] w-[100%]">
+            <div class="flex flex-col items-center justify-center text-5xl text-black text-center">
+                <h1>Hi, I'm Emmett Tackaberry.</h1>
+                <h2>[press any button]</h2>
+            </div>
+            <div class="area">
+                <ul class="circles -z-10">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-[100%] h-[100%] transition-all duration-500 page">
+            <!--<div class="w-[50%] h-[100%] bg-green-50 rounded-lg outline mb-[-20px] mt-[-20px] outline-[20px] outline-green-50">
+                <p class="text-5xl text-left">
+                    Work
+                </p>
+                <div>
+                    <p class="text-left">
+                        Here are some creative things I've managed to put together:
+                    </p>
+                    <div class="mt-5 accordion">
+                        <div class="grid grid-cols-2 justify-between select-none cursor-pointer bg-green-900 hover:bg-green-950 text-white rounded-md transition-all question">
+                            <p class="pl-1 text-3xl">Coding</p>
+                            <p class="accordion-identifier text-right pr-1 text-lg">▲</p>
+                        </div>
+                        <div class="bg-green-100 rounded-b-lg rounded-bl-lg answer overflow-hidden transition-[max-height] ease-out duration-500 px-5">
+                            <p class="mt-5">
+                                <div class="text-xl">
+                                    Scratch Accounts: <a href="https://scratch.mit.edu/users/keyboardura/" class="text-green-700 hover:text-green-800 transition-all font-bold">keyboardura</a> 
+                                    & <a href="https://scratch.mit.edu/users/ETMonsterGames/" class="text-green-700 hover:text-green-800 transition-all font-bold">ETMonsterGames</a>
                                 </div>
+                                <br>
+                                'keyboardura' was made in 2018 and 'ETMonsterGames' was made in 2020 and are both inactive. With 100s of games worth of nostalgia and history, these accounts
+                                mark the start of my computer programming journey.
+                            </p>
+                            <div class="flex justify-center my-5">
+                                <img class="w-[100%] rounded-md" src="img/helicopter.png" alt="An image with a helicopter I made in Photoshop" />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-[100%] h-screen flex justify-center transition-[all] duration-500 page"> <!--page 1-->
-                    <div class="w-[30%] bg-green-50 outline outline-[20px] outline-green-50 rounded-lg">
-                        <div>
-                            <hr class="bg-green-800 h-[3px] my-5">
-                            <p class="text-5xl text-left">
-                                Work
-                            </p>
-                            <div>
-                                <p class="text-left">
-                                    Here are some creative things I've managed to put together:
-                                </p>
-                                <div class="mt-5 accordion">
-                                    <div class="grid grid-cols-2 justify-between select-none cursor-pointer bg-green-900 hover:bg-green-950 text-white rounded-md transition-all question">
-                                        <p class="pl-1 text-lg">Coding</p>
-                                        <p class="accordion-identifier text-right pr-1 text-lg">▲</p>
-                                    </div>
-                                    <div class="bg-green-100 rounded-b-lg rounded-bl-lg answer overflow-hidden transition-[max-height] ease-in duration-500 px-5">
-                                        <p class="mt-5">
-                                            Scratch Accounts: <a href="https://scratch.mit.edu/users/keyboardura/" class="text-green-700 hover:text-green-800 transition-all font-bold">keyboardura</a> 
-                                            & <a href="https://scratch.mit.edu/users/ETMonsterGames/" class="text-green-700 hover:text-green-800 transition-all font-bold">ETMonsterGames</a>
-                                            <br>
-                                            'keyboardura' was made in 2018 and 'ETMonsterGames' was made in 2020 and are both inactive. 10s of games worth of history and nostalgia made with these accounts 
-                                            marks the start of my coding journey.
-                                        </p>
-                                        <div class="flex justify-center my-5">
-                                            <img class="w-[100%] rounded-md" src="img/helicopter.png" alt="An image with a helicopter I made in Photoshop" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            </div>-->
+            <div class="flex flex-col justify-center items-center">
+                <div class="text-5xl">
+                    Coding
+                </div>
+                <div class="grid grid-cols-3 gap-10">
+                    <div class="hover:cursor-pointer hover:brightness-50 transition-[all] rounded-md">
+                        <img src="img/coding/avoid-the-presents.png" alt="Avoid the Presents" class="" />
+                    </div>
+                    <div class="hover:cursor-pointer hover:brightness-50 transition-[all] rounded-md">
+                        <img src="img/coding/clicker-eat.png" alt="Clicker Eat" class="" />
                     </div>
                 </div>
-                <div class="w-[100%] h-screen flex justify-center transition-[all] duration-500 page"> <!--page 2-->
-                    <h1>
-                        Interests
-                    </h1>
+                <div class="text-5xl">
+                    Graphic Design
                 </div>
-                <div class="w-[100%] h-screen flex justify-center transition-[all] duration-500 page"> <!--page 3-->
-                    <h1>
-                        Contact
-                    </h1>
+
+                <div class="text-5xl">
+                    Music
                 </div>
+
+                <div class="text-5xl">
+                    Video Making
+                </div>
+            </div>
+            <div class="area">
+                <ul class="circles -z-10">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
         </div>
     </div>
