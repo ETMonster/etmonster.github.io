@@ -677,14 +677,6 @@ body {
   height: 100%;
 }
 
-.accordion .answer {
-  max-height: 0px;
-}
-
-.accordion.active .answer {
-  max-height: 1000px;
-}
-
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -723,6 +715,25 @@ iframe:focus {
   to   {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.subtitle {
+  animation: fadeinsubtitle 2s 4s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.subtitle.finished {
+  opacity: 1;
+}
+
+@keyframes fadeinsubtitle {
+  from {
+  }
+
+  to   {
+    opacity: 1;
   }
 }
 

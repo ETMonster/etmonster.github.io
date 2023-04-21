@@ -1,13 +1,14 @@
+const title = document.querySelector('.title');
+const subtitle = document.querySelector('.subtitle');
 const pages = document.querySelectorAll('.page');
-const title = document.querySelectorAll('.title')[0];
-const a = document.querySelectorAll('a');
-const iframe = document.querySelectorAll('iframe');
+const links = document.querySelectorAll('a');
+const iframes = document.querySelectorAll('iframe');
+const works = document.querySelectorAll('.work');
+
 let hasPressedKey = false;
 let canPressKey = false;
 
 document.body.style.overflowY = 'hidden';
-a.forEach(i => {i.tabIndex = -1});
-iframe.forEach(i => {i.tabIndex = -1});
 
 window.onbeforeunload = function() {
     pages.forEach(page => {
@@ -19,18 +20,24 @@ window.onbeforeunload = function() {
     });
 }
 
-function waitForTitleAnimation() {canPressKey = true;}
-setInterval(waitForTitleAnimation, 1000);
-
 function changePage() {
     pages.forEach(page => {page.style.transform = 'translateX(-100%)';});
-    a.forEach(i => {i.tabIndex = 0});
-    iframe.forEach(i => {i.tabIndex = 0});
-
+    links.forEach(i => {i.tabIndex = 0});
+    iframes.forEach(i => {i.tabIndex = 0});
+    
     document.body.style.overflowY = 'scroll';
 }
 
-function onKeyPress() {
+works.forEach(div => {
+    div.addEventListener('click', function() {
+        window.open(div.querySelector('a').getAttribute('href'), '_blank'); 
+    });
+});
+
+links.forEach(i => {i.tabIndex = -1});
+iframes.forEach(i => {i.tabIndex = -1});
+
+document.addEventListener('keyup', () => {
     pages.forEach(page => {page.style.transition = 'all 1000ms';});
     if (!hasPressedKey && canPressKey) {
         title.style.transform = 'translateY(100vh)';
@@ -38,16 +45,8 @@ function onKeyPress() {
         setInterval(changePage, 1200);
         hasPressedKey = true;
     }
-}
-
-document.addEventListener('keyup', onKeyPress);
-
-// links
-
-const workDivs = document.querySelectorAll('.work');
-
-workDivs.forEach(div => {
-    div.addEventListener('click', function() {
-        window.open(div.querySelector('a').getAttribute('href'), '_blank'); 
-    });
 });
+
+subtitle.addEventListener('animationend', () => {subtitle.classList.add('finished');});
+
+setInterval(function() {canPressKey = true;}, 2000);
