@@ -7,96 +7,138 @@
     <title>Document</title>
     <link rel="stylesheet" href="output.css" />
 </head>
-<body class="m-0 p-0">
-    <div class="w-[200%] h-[100%] flex"> <!--content wrapper-->
-        <div class="h-[100%] w-[100%]">
-            <div class="flex flex-col items-center justify-center text-5xl text-black text-center">
-                <h1>Hi, I'm Emmett Tackaberry.</h1>
-                <h2>[press any button]</h2>
-            </div>
-            <div class="area">
-                <ul class="circles -z-10">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+<body class="m-0 p-0 overflow-x-hidden">
+    <div class="w-[200%]  flex wrapper" id="container"> <!--content wrapper-->
+        <div class="w-[100%] page text-white text-center">
+            <div class="title">
+                <h1 class="text-[100px]">Hi, I'm Emmett Tackaberry.</h1>
+                <h2 class="text-4xl">[press any button]</h2>
             </div>
         </div>
-        <div class="w-[100%] h-[100%] transition-all duration-500 page">
-            <!--<div class="w-[50%] h-[100%] bg-green-50 rounded-lg outline mb-[-20px] mt-[-20px] outline-[20px] outline-green-50">
-                <p class="text-5xl text-left">
-                    Work
-                </p>
-                <div>
-                    <p class="text-left">
-                        Here are some creative things I've managed to put together:
-                    </p>
-                    <div class="mt-5 accordion">
-                        <div class="grid grid-cols-2 justify-between select-none cursor-pointer bg-green-900 hover:bg-green-950 text-white rounded-md transition-all question">
-                            <p class="pl-1 text-3xl">Coding</p>
-                            <p class="accordion-identifier text-right pr-1 text-lg">▲</p>
-                        </div>
-                        <div class="bg-green-100 rounded-b-lg rounded-bl-lg answer overflow-hidden transition-[max-height] ease-out duration-500 px-5">
-                            <p class="mt-5">
-                                <div class="text-xl">
-                                    Scratch Accounts: <a href="https://scratch.mit.edu/users/keyboardura/" class="text-green-700 hover:text-green-800 transition-all font-bold">keyboardura</a> 
-                                    & <a href="https://scratch.mit.edu/users/ETMonsterGames/" class="text-green-700 hover:text-green-800 transition-all font-bold">ETMonsterGames</a>
-                                </div>
-                                <br>
-                                'keyboardura' was made in 2018 and 'ETMonsterGames' was made in 2020 and are both inactive. With 100s of games worth of nostalgia and history, these accounts
-                                mark the start of my computer programming journey.
-                            </p>
-                            <div class="flex justify-center my-5">
-                                <img class="w-[100%] rounded-md" src="img/helicopter.png" alt="An image with a helicopter I made in Photoshop" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-            <div class="flex flex-col justify-center items-center">
-                <div class="text-5xl">
+        <div class="w-[100%] h-[100%] page">
+            <div class="flex flex-col justify-center items-center mx-5 lg:mx-40">
+                <div class="text-[75px] my-10 text-white">
                     Coding
                 </div>
-                <div class="grid grid-cols-3 gap-10">
-                    <div class="hover:cursor-pointer hover:brightness-50 transition-[all] rounded-md">
-                        <img src="img/coding/avoid-the-presents.png" alt="Avoid the Presents" class="" />
+                <div class="grid grid-cols-1 gap-5 mt-5 justify-items-center lg:grid-cols-3">
+                    <div class="hover:cursor-pointer transition-[all] work">
+                        <a href="https://scratch.mit.edu/projects/197658483/"></a>
+                        <img src="img/coding/a-writing-game.png" alt="A Writing Game" class="rounded-md drop-shadow-2xl" />
+                        <p class="text-white">A Writing Game (Scratch)</p>
                     </div>
-                    <div class="hover:cursor-pointer hover:brightness-50 transition-[all] rounded-md">
-                        <img src="img/coding/clicker-eat.png" alt="Clicker Eat" class="" />
+                    <div class="hover:cursor-pointer transition-[all] work">
+                        <a href="https://scratch.mit.edu/projects/188717691/"></a>
+                        <img src="img/coding/avoid-the-presents.png" alt="Avoid the Presents" class="rounded-md drop-shadow-2xl" />
+                        <p class="text-white">Avoid the Presents (Scratch)</p>
+                    </div>
+                    <div class="hover:cursor-pointer transition-[all] work">
+                        <a href="https://scratch.mit.edu/projects/207502123/"></a>
+                        <img src="img/coding/click-it.png" alt="Click It!" class="rounded-md drop-shadow-2xl" />
+                        <p class="text-white">Click It! (Scratch)</p>
+                    </div>
+                    <div class="hover:cursor-pointer transition-[all] work">
+                        <a href="https://scratch.mit.edu/projects/367830894/"></a>
+                        <img src="img/coding/clicker-eat.png" alt="Clicker Eat" class="rounded-md drop-shadow-2xl" />
+                        <p class="text-white">Clicker Eat (Scratch)</p>
+                    </div>
+                    <div class="hover:cursor-pointer transition-[all] work">
+                        <a href="https://scratch.mit.edu/projects/201961719/"></a>
+                        <img src="img/coding/escape-the-dungeon.png" alt="Escape the Dungeon" class="rounded-md drop-shadow-2xl" />
+                        <p class="text-white">Escape the Dungeon (Scratch)</p>
+                    </div>
+                    <div class="hover:cursor-pointer transition-[all] work">
+                        <a href="https://scratch.mit.edu/projects/386042955/"></a>
+                        <img src="img/coding/farmer-joe.png" alt="Farmer Joe" class="rounded-md drop-shadow-2xl" />
+                        <p class="text-white">Farmer Joe (Scratch)</p>
+                    </div>
+                    <div class="hover:cursor-pointer transition-[all] work">
+                        <a href="https://scratch.mit.edu/projects/200374866/"></a>
+                        <img src="img/coding/go-get-em.png" alt="Go Get 'Em!" class="rounded-md drop-shadow-2xl" />
+                        <p class="text-white">Go Get 'Em! (Scratch)</p>
+                    </div>
+                    <div class="hover:cursor-pointer transition-[all] work">
+                        <a href="https://etmonster.itch.io/jam-scram"></a>
+                        <img src="img/coding/jam-scram-0.png" alt="Jam Scram" class="rounded-md drop-shadow-2xl" />
+                        <p class="text-white">Jam Scram (Unity)</p>
+                    </div>
+                    <div class="hover:cursor-pointer transition-[all] work">
+                        <a href="https://etmonster.itch.io/jam-scram"></a>
+                        <img src="img/coding/jam-scram-1.png" alt="Jam Scram" class="rounded-md drop-shadow-2xl" />
+                        <p class="text-white">Jam Scram (Unity)</p>
+                    </div>
+                    <div class="hover:cursor-pointer transition-[all] work">
+                        <a href="https://scratch.mit.edu/projects/197658483/"></a>
+                        <img src="img/coding/jump.png" alt="Jump!" class="rounded-md drop-shadow-2xl" />
+                        <p class="text-white">Jump! (Scratch)</p>
+                    </div>
+                    <div class="hover:cursor-pointer transition-[all] work">
+                        <a href="https://etmonster.itch.io/unanswered-mysteries"></a>
+                        <img src="img/coding/unanswered-mysteries.png" alt="Unanswered Mysteries" class="rounded-md drop-shadow-2xl" />
+                        <p class="text-white">Unanswered Mysteries (Unity)</p>
                     </div>
                 </div>
-                <div class="text-5xl">
+                <div class="text-[75px] my-10 text-white">
                     Graphic Design
                 </div>
-
-                <div class="text-5xl">
+                <div class="grid grid-cols-1 gap-5 mt-5 justify-items-center">
+                    <div class="transition-[all]">
+                        <img src="img/graphic-design/helicopter.png" alt="Helicopter in the Mountains" class="rounded-md drop-shadow-2xl" />
+                        <p class="text-white">Helicopter in the Mountains</p>
+                    </div>
+                    <div class="transition-[all]">
+                        <img src="img/graphic-design/on-the-cliff.png" alt="On the Cliff" class="rounded-md drop-shadow-2xl" />
+                        <p class="text-white">On the Cliff</p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
+                        <div class="transition-[all]">
+                            <img src="img/graphic-design/breathless-nights.png" alt="Breathless Nights Album Cover" class="rounded-md drop-shadow-2xl" />
+                            <p class="text-white">Breathless Nights</p>
+                        </div>
+                        <div class="hover:cursor-pointer transition-[all] work">
+                            <a href="https://www.bandlab.com/mmonstrr/heat-wave"></a>
+                            <img src="img/graphic-design/heat-wave.png" alt="Heat Wave Album Cover" class="rounded-md drop-shadow-2xl" />
+                            <p class="text-white">Heat Wave</p>
+                        </div>
+                        <div class="hover:cursor-pointer transition-[all] work">
+                            <a href="https://www.bandlab.com/mmonstrr/in-your-mind"></a>
+                            <img src="img/graphic-design/in-your-mind.png" alt="In Your Mind Album Cover" class="rounded-md drop-shadow-2xl" />
+                            <p class="text-white">In Your Mind</p>
+                        </div>
+                        <div class="hover:cursor-pointer transition-[all] work">
+                            <a href="https://www.bandlab.com/mmonstrr/purple-stars"></a>
+                            <img src="img/graphic-design/purple-stars.png" alt="Purple Stars Album Cover" class="rounded-md drop-shadow-2xl" />
+                            <p class="text-white">Purple Stars</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-[75px] my-10 text-white">
                     Music
                 </div>
-
-                <div class="text-5xl">
-                    Video Making
+                <div class="grid grid-cols-1 gap-5 mt-5 justify-items-center lg:grid-cols-2">
+                    <iframe width="560" height="202" src="https://www.bandlab.com/embed/?id=2952d6e3-9183-ed11-9d7a-000d3a3eed2a" frameborder="0" allowfullscreen class="rounded-md drop-shadow-2xl"></iframe>
+                    <iframe width="560" height="202" src="https://www.bandlab.com/embed/?id=bac04041-862c-ed11-b494-000d3a3ee5f3" frameborder="0" allowfullscreen class="rounded-md drop-shadow-2xl"></iframe>
+                    <iframe width="560" height="202" src="https://www.bandlab.com/embed/?id=10fcea83-bb07-ed11-b47a-281878315d59" frameborder="0" allowfullscreen class="rounded-md drop-shadow-2xl"></iframe>
+                    <iframe width="560" height="202" src="https://www.bandlab.com/embed/?id=289e8c34-ca06-ed11-b47a-281878315d59" frameborder="0" allowfullscreen class="rounded-md drop-shadow-2xl"></iframe>
+                    <iframe width="560" height="202" src="https://www.bandlab.com/embed/?id=3f94cff2-38f3-ec11-b47a-281878315d59" frameborder="0" allowfullscreen class="rounded-md drop-shadow-2xl"></iframe>
+                    <iframe width="560" height="202" src="https://www.bandlab.com/embed/?id=623b88f2-69ea-ec11-b656-281878319acf" frameborder="0" allowfullscreen class="rounded-md drop-shadow-2xl"></iframe>
+                    <iframe width="560" height="202" src="https://www.bandlab.com/embed/?id=8c560ec5-27ce-ec11-997e-28187831e8a1" frameborder="0" allowfullscreen class="rounded-md drop-shadow-2xl"></iframe>
+                    <iframe width="560" height="202" src="https://www.bandlab.com/embed/?id=f6a601fa-3476-ec11-94f6-a04a5e79a6b8" frameborder="0" allowfullscreen class="rounded-md drop-shadow-2xl"></iframe>
+                    <iframe width="560" height="202" src="https://www.bandlab.com/embed/?id=4195cf38-b3cb-eb11-a7ad-0050f280467f" frameborder="0" allowfullscreen class="rounded-md drop-shadow-2xl"></iframe>
+                    <iframe width="560" height="202" src="https://www.bandlab.com/embed/?id=1a280e24-5284-eb11-9889-0050f28a50ba" frameborder="0" allowfullscreen class="rounded-md drop-shadow-2xl"></iframe>
                 </div>
-            </div>
-            <div class="area">
-                <ul class="circles -z-10">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <iframe width="560" height="202" src="https://www.bandlab.com/embed/?id=fae76e4f-ac82-eb11-9889-0050f28a50ba" frameborder="0" allowfullscreen class="rounded-md drop-shadow-2xl mt-5"></iframe>
+                <div class="text-[75px] my-10 text-white">
+                    Videos
+                </div>
+                <div class="grid grid-cols-1 gap-5 mt-5 justify-items-center lg:grid-cols-2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9lKttb980Gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-md drop-shadow-2xl"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LbyZwWLp5nQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-md drop-shadow-2xl"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2G925X3Sn3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-md drop-shadow-2xl"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UObu0-Gw8F8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-md drop-shadow-2xl"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mV5dErsK_uQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-md drop-shadow-2xl"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PcVAiIoq0Yg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-md drop-shadow-2xl"></iframe>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7BSUHSZFTFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded-md drop-shadow-2xl mt-5 mb-10"></iframe>
             </div>
         </div>
     </div>
