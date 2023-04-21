@@ -699,6 +699,16 @@ body {
   }
 }
 
+.work:has(a:focus)  {
+  outline-style: solid;
+  outline-color: white;
+}
+
+iframe:focus {
+  outline-style: solid;
+  outline-color: white;
+}
+
 .title {
   animation: fadein 2s;
   transition: all 2s;

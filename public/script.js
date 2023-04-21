@@ -30,7 +30,7 @@ function changePage() {
     document.body.style.overflowY = 'scroll';
 }
 
-function onKeyPress(e) {
+function onKeyPress() {
     pages.forEach(page => {page.style.transition = 'all 1000ms';});
     if (!hasPressedKey && canPressKey) {
         title.style.transform = 'translateY(100vh)';
@@ -40,7 +40,7 @@ function onKeyPress(e) {
     }
 }
 
-document.addEventListener('keypress', onKeyPress);
+document.addEventListener('keyup', onKeyPress);
 
 // links
 
