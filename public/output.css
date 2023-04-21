@@ -645,6 +645,10 @@ video {
   font-size: 75px;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -667,7 +671,6 @@ body {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100%;
-  position: relative;
 }
 
 .accordion .answer {
