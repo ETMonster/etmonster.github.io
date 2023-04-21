@@ -20,7 +20,7 @@ window.onbeforeunload = function() {
 }
 
 function waitForTitleAnimation() {canPressKey = true;}
-setInterval(waitForTitleAnimation, 2000);
+setInterval(waitForTitleAnimation, 1000);
 
 function changePage() {
     pages.forEach(page => {page.style.transform = 'translateX(-100%)';});
@@ -31,11 +31,11 @@ function changePage() {
 }
 
 function onKeyPress(e) {
-    pages.forEach(page => {page.style.transition = 'all 2000ms';});
+    pages.forEach(page => {page.style.transition = 'all 1000ms';});
     if (!hasPressedKey && canPressKey) {
         title.style.transform = 'translateY(100vh)';
         title.style.opacity = 0;
-        setInterval(changePage, 2200);
+        setInterval(changePage, 1200);
         hasPressedKey = true;
     }
 }
