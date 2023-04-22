@@ -109,11 +109,11 @@ iframe:focus {
 
 
 .header {
-    -webkit-animation: fadeinsubtitle 4s;
-       -moz-animation: fadeinsubtitle 4s;
-        -ms-animation: fadeinsubtitle 4s;
-         -o-animation: fadeinsubtitle 4s;
-            animation: fadeinsubtitle 4s;
+    -webkit-animation: fadeinsubtitle 6s;
+       -moz-animation: fadeinsubtitle 6s;
+        -ms-animation: fadeinsubtitle 6s;
+         -o-animation: fadeinsubtitle 6s;
+            animation: fadeinsubtitle 6s;
     
     opacity: 0;
     animation-fill-mode: forwards;
