@@ -32,7 +32,6 @@ iframe:focus {
     outline-color: white;
 }
 
-
 .title {
     -webkit-animation: fadein 2s;
        -moz-animation: fadein 2s;
@@ -80,6 +79,47 @@ iframe:focus {
 
 }
 .subtitle.finished {
+    opacity: 1;
+}
+
+@keyframes fadeinsubtitle {
+    from {}
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadeinsubtitle {
+    from {}
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadeinsubtitle {
+    from {}
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadeinsubtitle {
+    from {}
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadeinsubtitle {
+    from {}
+    to   { opacity: 1; }
+}
+
+
+.header {
+    -webkit-animation: fadeinsubtitle 4s;
+       -moz-animation: fadeinsubtitle 4s;
+        -ms-animation: fadeinsubtitle 4s;
+         -o-animation: fadeinsubtitle 4s;
+            animation: fadeinsubtitle 4s;
+    
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+.header.finished {
     opacity: 1;
 }
 

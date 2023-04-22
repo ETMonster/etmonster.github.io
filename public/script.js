@@ -1,5 +1,7 @@
 const title = document.querySelector('.title');
 const subtitle = document.querySelector('.subtitle');
+const header = document.querySelector('.header');
+
 const pages = document.querySelectorAll('.page');
 const links = document.querySelectorAll('a');
 const iframes = document.querySelectorAll('iframe');
@@ -9,23 +11,25 @@ let hasPressedKey = false;
 let canPressKey = false;
 
 document.body.style.overflowY = 'hidden';
+pages[1].style.opacity = 0;
 
-window.onbeforeunload = function() {
+window.onbeforeunload = () => {
     pages.forEach(page => {
         page.style.transition = 'none';
         page.style.transform = 'translateX(100%)';
         title.style.transform = 'translateY(0)';
-        title.style.opacity = 100;
+        title.style.opacity = 1;
         scrollTo(document.body.scrollLeft, 0);
     });
 }
 
 function changePage() {
+    pages[1].style.opacity = 1;
+    document.body.style.overflowY = 'scroll';
+    
     pages.forEach(page => {page.style.transform = 'translateX(-100%)';});
     links.forEach(i => {i.tabIndex = 0});
     iframes.forEach(i => {i.tabIndex = 0});
-    
-    document.body.style.overflowY = 'scroll';
 }
 
 works.forEach(div => {
@@ -34,10 +38,10 @@ works.forEach(div => {
     });
 });
 
-links.forEach(i => {i.tabIndex = -1});
-iframes.forEach(i => {i.tabIndex = -1});
+links.forEach(i => {i.tabIndex = -1;});
+iframes.forEach(i => {i.tabIndex = -1;});
 
-document.addEventListener('keyup', () => {
+function onEvent() {
     pages.forEach(page => {page.style.transition = 'all 1000ms';});
     if (!hasPressedKey && canPressKey) {
         title.style.transform = 'translateY(100vh)';
@@ -45,8 +49,12 @@ document.addEventListener('keyup', () => {
         setInterval(changePage, 1200);
         hasPressedKey = true;
     }
-});
+}
+
+document.addEventListener('keyup', onEvent);
+document.addEventListener('mouseup', onEvent);
 
 subtitle.addEventListener('animationend', () => {subtitle.classList.add('finished');});
+header.addEventListener('animationend', () => {header.classList.add('finished');});
 
-setInterval(function() {canPressKey = true;}, 2000);
+setInterval(() => {canPressKey = true;}, 2000);
