@@ -746,11 +746,11 @@ iframe:focus {
 }
 
 .title {
-  animation: fadein 2s;
+  animation: fadeinfrombottom 2s;
   transition: all 2s;
 }
 
-@keyframes fadein {
+@keyframes fadeinfrombottom {
   from {
     opacity: 0;
     transform: translateY(100vh);
@@ -763,7 +763,7 @@ iframe:focus {
 }
 
 .subtitle {
-  animation: fadeinsubtitle 2s 4s;
+  animation: fadein 2s 4s;
   opacity: 0;
   animation-fill-mode: forwards;
 }
@@ -772,17 +772,8 @@ iframe:focus {
   opacity: 1;
 }
 
-@keyframes fadeinsubtitle {
-  from {
-  }
-
-  to   {
-    opacity: 1;
-  }
-}
-
 .header {
-  animation: fadeinsubtitle 6s;
+  animation: fadein 6s;
   opacity: 0;
   animation-fill-mode: forwards;
 }
@@ -791,7 +782,17 @@ iframe:focus {
   opacity: 1;
 }
 
-@keyframes fadeinsubtitle {
+.scroll-fade-in.fade-in {
+  animation: fadein 3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.scroll-fade-in.finished {
+  opacity: 1;
+}
+
+@keyframes fadein {
   from {
   }
 

@@ -6,6 +6,9 @@ const pages = document.querySelectorAll('.page');
 const links = document.querySelectorAll('a');
 const iframes = document.querySelectorAll('iframe');
 const works = document.querySelectorAll('.work');
+const fadeIns = document.querySelectorAll('.scroll-fade-in');
+
+const bottomOfWindow = window.scrollTop + window.clientHeight;
 
 let hasPressedKey = false;
 let canPressKey = false;
@@ -30,6 +33,18 @@ function changePage() {
     pages.forEach(page => {page.style.transform = 'translateX(-100%)';});
     links.forEach(i => {i.tabIndex = 0});
     iframes.forEach(i => {i.tabIndex = 0});
+    
+    checkElementLocation();
+}
+
+function checkElementLocation() {
+    fadeIns.forEach(function(fadeIn) {
+        var bottomOfObject = fadeIn.offsetTop + fadeIn.offsetHeight;
+
+        if (bottomOfWindow > bottomOfObject) {
+            fadeIn.classList.add('fade-in');
+        }
+    });
 }
 
 works.forEach(div => {
@@ -40,6 +55,7 @@ works.forEach(div => {
 
 links.forEach(i => {i.tabIndex = -1;});
 iframes.forEach(i => {i.tabIndex = -1;});
+fadeIns.forEach(i => {i.addEventListener('animationend', () => {header.classList.add('finished');});});
 
 function onEvent() {
     pages.forEach(page => {page.style.transition = 'all 1000ms';});
@@ -53,6 +69,10 @@ function onEvent() {
 
 document.addEventListener('keyup', onEvent);
 document.addEventListener('mouseup', onEvent);
+window.addEventListener('scroll', () => {
+    checkElementLocation();
+    onEvent();
+});
 
 subtitle.addEventListener('animationend', () => {subtitle.classList.add('finished');});
 header.addEventListener('animationend', () => {header.classList.add('finished');});

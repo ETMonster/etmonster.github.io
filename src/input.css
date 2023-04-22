@@ -33,46 +33,46 @@ iframe:focus {
 }
 
 .title {
-    -webkit-animation: fadein 2s;
-       -moz-animation: fadein 2s;
-        -ms-animation: fadein 2s;
-         -o-animation: fadein 2s;
-            animation: fadein 2s;
+    -webkit-animation: fadeinfrombottom 2s;
+       -moz-animation: fadeinfrombottom 2s;
+        -ms-animation: fadeinfrombottom 2s;
+         -o-animation: fadeinfrombottom 2s;
+            animation: fadeinfrombottom 2s;
            transition: all 2s;
 }
 
-@keyframes fadein {
+@keyframes fadeinfrombottom {
     from { opacity: 0; transform: translateY(100vh); }
     to   { opacity: 1; transform: translateY(0);     }
 }
 
-@-moz-keyframes fadein {
+@-moz-keyframes fadeinfrombottom {
     from { opacity: 0; transform: translateY(100vh); }
     to   { opacity: 1; transform: translateY(0);     }
 }
 
-@-webkit-keyframes fadein {
+@-webkit-keyframes fadeinfrombottom {
     from { opacity: 0; transform: translateY(100vh); }
     to   { opacity: 1; transform: translateY(0);     }
 }
 
-@-ms-keyframes fadein {
+@-ms-keyframes fadeinfrombottom {
     from { opacity: 0; transform: translateY(100vh); }
     to   { opacity: 1; transform: translateY(0);     }
 }
 
-@-o-keyframes fadein {
+@-o-keyframes fadeinfrombottom {
     from { opacity: 0; transform: translateY(100vh); }
     to   { opacity: 1; transform: translateY(0);     }
 }
 
 
 .subtitle {
-    -webkit-animation: fadeinsubtitle 2s 4s;
-       -moz-animation: fadeinsubtitle 2s 4s;
-        -ms-animation: fadeinsubtitle 2s 4s;
-         -o-animation: fadeinsubtitle 2s 4s;
-            animation: fadeinsubtitle 2s 4s;
+    -webkit-animation: fadein 2s 4s;
+       -moz-animation: fadein 2s 4s;
+        -ms-animation: fadein 2s 4s;
+         -o-animation: fadein 2s 4s;
+            animation: fadein 2s 4s;
     
     opacity: 0;
     animation-fill-mode: forwards;
@@ -82,38 +82,12 @@ iframe:focus {
     opacity: 1;
 }
 
-@keyframes fadeinsubtitle {
-    from {}
-    to   { opacity: 1; }
-}
-
-@-moz-keyframes fadeinsubtitle {
-    from {}
-    to   { opacity: 1; }
-}
-
-@-webkit-keyframes fadeinsubtitle {
-    from {}
-    to   { opacity: 1; }
-}
-
-@-ms-keyframes fadeinsubtitle {
-    from {}
-    to   { opacity: 1; }
-}
-
-@-o-keyframes fadeinsubtitle {
-    from {}
-    to   { opacity: 1; }
-}
-
-
 .header {
-    -webkit-animation: fadeinsubtitle 6s;
-       -moz-animation: fadeinsubtitle 6s;
-        -ms-animation: fadeinsubtitle 6s;
-         -o-animation: fadeinsubtitle 6s;
-            animation: fadeinsubtitle 6s;
+    -webkit-animation: fadein 6s;
+       -moz-animation: fadein 6s;
+        -ms-animation: fadein 6s;
+         -o-animation: fadein 6s;
+            animation: fadein 6s;
     
     opacity: 0;
     animation-fill-mode: forwards;
@@ -123,27 +97,41 @@ iframe:focus {
     opacity: 1;
 }
 
-@keyframes fadeinsubtitle {
+.scroll-fade-in.fade-in {
+    -webkit-animation: fadein 3s;
+       -moz-animation: fadein 3s;
+        -ms-animation: fadein 3s;
+         -o-animation: fadein 3s;
+            animation: fadein 3s;
+
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.scroll-fade-in.finished {
+    opacity: 1;
+}
+
+@keyframes fadein {
     from {}
     to   { opacity: 1; }
 }
 
-@-moz-keyframes fadeinsubtitle {
+@-moz-keyframes fadein {
     from {}
     to   { opacity: 1; }
 }
 
-@-webkit-keyframes fadeinsubtitle {
+@-webkit-keyframes fadein {
     from {}
     to   { opacity: 1; }
 }
 
-@-ms-keyframes fadeinsubtitle {
+@-ms-keyframes fadein {
     from {}
     to   { opacity: 1; }
 }
 
-@-o-keyframes fadeinsubtitle {
+@-o-keyframes fadein {
     from {}
     to   { opacity: 1; }
 }
